@@ -17,7 +17,7 @@ $(document).ready(function () {
     f_summary;
 
   //api key - should be moved to server side
-  const secretKey = '2b06ec059a8e5f4b05b3ca2a5468d466';
+  const secretKey = 'xxxxxccc';
 
   // Return Name of day of week
   function getDayOfWeek(date) {
