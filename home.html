@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NewHome</title>
+	<link rel="icon" type="Icon/ico" href="favicon.ico">
+	<link href="https://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link href= "Style/NewHome_v.2.4.css" rel="stylesheet" 	type= "text/css" />
+
+<body >
+	
+	<div class="page">
+		
+		<div class= "container-page">
+			<!-- left column links -->
+			<div class="menu menu-left">
+				<a class="item-link" href = "https://www.google.com" target="_blank" >Google</a>
+				<a class="item-link" href = "https://www.yahoo.com" target="_blank" >Yahoo</a>
+				<a class="item-link" href = "https://www.amazon.com" target="_blank" >Amazon</a>
+				<a class="item-link" href = "https://www.ebay.com/" target="_blank" >eBay</a>
+				<a class="item-link" href = "https://delaware.craigslist.org" target="_blank" >Craig's List</a>
+				<a class="item-link" href = "https://www.tractorsupply.com/" target="_blank" >Tractor Supply</a>
+				<a class="item-link" href = "https://www.homedepot.com/" target="_blank" >Home Depot</a>
+				<a class="item-link" href = "https://www.lowes.com/" target="_blank" >Lowes</a>
+				<a class="item-link" href = "https://www.youtube.com" target="_blank" >You Tube</a>
+				<a class="item-link" href = "https://www.pinterest.com/" target="_blank" >Pintrest</a>
+				<a class="item-link" href = "https://www.instructables.com/" target="_blank" >Instructables</a>
+				<a class="item-link" href = "https://www.harborfreight.com/" target="_blank" >Harbor Freight</a>
+				<a class="item-link" href = "https://www.samsclub.com/" target="_blank" >Sams Club</a>
+				<a class="item-link" href = "https://www.usaa.com" target="_blank" >USAA</a>
+				<a class="item-link" href = "https://www.imgur.com" target="_blank" >Imgur</a>
+				<a class="item-link" href = "https://radar.weather.gov" target="_blank" >NWS Radar</a>
+				<a class="item-link" href = "https://darksky.net/forecast/39.1254,-75.5263/us12/en" target="_blank" >DarkSky</a>
+				<a class="item-link" href = "https://earth.nullschool.net/" target="_blank" class="item-link" >Earth</a>
+			</div>
+			
+			<!--middle column  -->
+			<div class="content">
+					<!-- clock -->
+				<div id="clock"></div>
+				<!-- current conditions -->
+				<div id="darkSky" onclick="darkSkyOpen()">
+					<h2 id = "dateInfo"></h2>
+					<div class = "conditions">
+						<span class="currCond" id = "Cur_temp"></span>
+						<span class="currCond" id = "cond"></span>
+						<span class="currCond" id = "wind"></span>
+					</div>
+					<div class = "conditions">
+						<span class="currCond" id ="Lo_temp"></span>
+						<span class="currCond" id="Summary"></span>
+						<span class="currCond" id ="Hi_temp"></span>
+					</div>
+				</div>
+				<!-- five day forcast -->
+				<div class="fiveDayForecast" id ="forecast"></div>
+			</div>
+			
+			<!-- right column links -->
+			<div class="menu menu-right">
+        <a class="item-link" href = "https://www.udemy.com/home/my-courses/learning/" target="_blank">Udemy</a></li>
+				<a class="item-link" href = "https://www.github.com" target="_blank">GitHub</a></li>
+				<a class="item-link" href = "https://discord.com/channels/@me" target="_blank">Discord</a></li>
+				<a class="item-link" href = "https://epicreact.dev/learn" target="_blank">Epic React</a></li>
+				<a class="item-link" href = "https://classroom.udacity.com/me" target="_blank">Udacity</a></li>
+				<a class="item-link" href = "https://www.coursera.org/" target="_blank">Coursea</a></li>
+				<a class="item-link" href = "https://www.freecodecamp.com/map#" target="_blank">Free Code Camp</a></li>
+				<a class="item-link" href = "https://courses.wesbos.com/account" target="_blank">Wes Bos Courses</a></li>
+				<a class="item-link" href = "https://dev.to/" target="_blank">DEV</a></li>
+				<a class="item-link" href = "https://www.mysql.com" target="_blank">MySql</a></li>
+				<a class="item-link" href = "https://www.github.com/Boolean-Operator/" target="_blank">GitHub</a></li>
+				<a class="item-link" href = "https://www.linkedin.com/in/marktgraybill" target="_blank">LinkedIn</a>
+				<a class="item-link" href = "https://members.codewithmosh.com/" target="_blank">Code with Mosh</a></li>
+				<a class="item-link" href = "https://my.xfinity.com/?CMP=ILC_myxfinity_myAccountWeb_au" target="_blank">Xfinity</a>
+				<a class="item-link" href = "https://www.marktgraybill.com" target="_blank">Mark T. Graybill</a>
+				<a class="item-link" href = "https://colorschemedesigner.com/" target="_blank">Color Scheme Designer</a></li>
+				<a class="item-link" href = "https://www.crockford.com/wrrrld/color.html" target = "_blank" >CSS Color Names</a></li>
+				
+				<!-- 				
+          <a class="item-link" href = "https://bdc-healthit.slack.com/messages" target="_blank"> Slack - BDC</a></li>
+          <a class="item-link" href = "https://www.edx.org/" target="_blank">EdX</a></li>	
+					<a class="item-link" href = "https://developer.mozilla.org/en-US//" target="_blank">MDN</a></li>
+					<a class="item-link" href="https://medium.com/" target="_blank">Medium</a> 
+					<a class="item-link" href="http://www.quora.com/" target="_blank">Quora</a>
+					<a class="item-link" href = "http://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+					<a class="item-link" href = "http://www.hackerrank.com/dashboard" target="_blank">HackerRank</a></li>
+					<a class="item-link" href = "https://www.codewars.com/" target="_blank">CodeWars</a></li>
+					<a class="item-link" href = "https://gitter.im/Colt/TheWebDeveloperBootcamp" target="_blank">Gitter</a></li>
+					<a class="item-link" href = "http://www.javascript.com" target="_blank">Java Script</a></li>
+					<a class="item-link" href = "http://www.devdocs.io/" target="_blank">DevDocs</a></li>
+					<a class="item-link" href = "http://www.csszengarden.com" target="_blank">CSS Zen Garden</a></li>
+					<a class="item-link" href = "https://www.heroku.com/" target="_blank">Heroku</a></li> 
+					<a class="item-link" href = "http://thegrommet.com/" target="_blank" >The Grommet</a>
+				--> 
+				
+			</div>
+		</div>
+		
+		<footer class="footer">
+			<span id="footerText">- © Mark T. Graybill -</span>
+		</footer>
+		
+	</div>
+			<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+			<script type='text/javascript' src='Script/NewHomeScript_v.2.js'></script>
+			<script type='text/javascript' src='Script/WeatherDSScript_v.2.js'></script>
+</body>
+</html>
+		
